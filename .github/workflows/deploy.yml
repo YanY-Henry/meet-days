@@ -31,6 +31,10 @@ jobs:
         run: npm ci
 
       - name: Build
+        env:
+          VITE_SYNC_ENDPOINT: ${{ secrets.VITE_SYNC_ENDPOINT }}
+          VITE_SYNC_KEY: ${{ secrets.VITE_SYNC_KEY }}
+          VITE_ACCESS_PASSWORD: ${{ secrets.VITE_ACCESS_PASSWORD }}
         run: npm run build
 
       - name: Upload artifact

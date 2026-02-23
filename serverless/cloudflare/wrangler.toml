@@ -1,0 +1,13 @@
+name = "meet-days"
+main = "worker.js"
+compatibility_date = "2026-02-23"
+
+[vars]
+GH_OWNER = "YanY-Henry"
+GH_REPO = "meet-days"
+GH_BRANCH = "main"
+GH_FILE_PATH = "data/meet-days.json"
+
+# Use `wrangler secret put` for these:
+# GH_TOKEN
+# SYNC_KEY
